@@ -1,0 +1,31 @@
+
+#box{
+    width: 100%;
+    height: 100vh;
+    /* vh 화면에 보여지는 영역 <지금 화면에 전체가 보여지는 박스를 뜻함>*/
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#login_box{
+    border: 5px blue solid;
+    border-radius: 10px;
+    width: 300px;
+    background-color: aqua;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    text-align: center;
+
+    box-shadow: 5px 5px 5px;
+}
+
+
+#button{
+    box-shadow: 2px 2px 2px;
+    
+}
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>회원가입</title>
+	<script src="Q80-reg_member.js"></script>
+</head>
+
+
+<body>
+	<div>
+		<form action="#" method="GET" id="form">
+			<fieldset>
+				<legend>아이디 비밀번호</legend>
+                 <table>
+					 <tr>
+						 <td>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+						 <td><input id="id" placeholder="아이디" minlength="4" maxlength="12" size="14" required><br></td>
+					 </tr>
+					 <tr>
+						 <td>PW&nbsp;&nbsp;&nbsp;&nbsp; :</td>
+						 <td><input id="pw" type="password" placeholder="비밀번호" minlength="4" maxlength="12" size="14" required><br></td>
+					 </tr>
+					 <tr>
+						 <td>PW_re&nbsp;:</td>
+						 <td><input id="pw_re" type="password" placeholder="비밀번호 재입력" minlength="4" maxlength="12" size="14" required><br></td>
+					 </tr>
+				 </table>
+				<!-- <input id="ID" required placeholder="id">
+				<br>
+
+				<input type="password" id="pw">
+				<br>
+				<input type="password" id="pw_re"> -->
+			</fieldset>
+			<fieldset>
+				<legend>개인 일반 정보</legend>
+				이름&nbsp; :<input id="user_name" placeholder="이름" minlength="3" maxlength="12" required>
+				<br>
+				E-mail:<input type="text" id="email" placeholder="E-mail" minlength="4" maxlength="20" required>
+				<!-- type="text"로 둔 이유는 @ 주소 를 밑에 모양을 만들었기 때문에 type이메일은 내부에 @를 넣어야해서  나중에 정규표현식 찾아볼 것 -->
+				@
+				<select id="email_add">
+					<option value="1">naver.com</option>
+					<option value="2">google.com</option>
+					<option value="3">daum.net</option>
+				</select>
+				<br>
+				<label for="birth_y">생년월일</label>
+				<input type="number" id="birth_y" value="1995" required>
+				<select id="birth_m">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<select id="birth_d">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				<H4>성별</H4>
+				<input type="radio" name="sex" value="M">남성
+				<input type="radio" name="sex" value="W" checked>여성
+				<br>
+				<label for="tell">전화번호</label>
+				<input type="tel" id="tel_1" minlength="3" maxlength="3" value="010" required>
+				<input type="tel" id="tel_2" minlength="4" maxlength="4"required>
+				<input type="tel" id="tel_3" minlength="4" maxlength="4"required>
+			</fieldset>
+			<input id="submit" type="submit" value="회원가입" onclick="check();">
+			<input type="reset" value="삭제">
+		</form>
+
+
+	</div>
+</body>
+
+</html>
